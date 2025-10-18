@@ -25,7 +25,7 @@ body {
 	font-size:1em;
 	display: grid;
   grid-template-rows: auto 1fr auto;
-	background-color: black;
+	background-color: #0c0c0c;
 }
 
 .main{
@@ -34,6 +34,42 @@ body {
 
 .logoimg {
   max-width:20em;
+}
+
+.footerimg {
+  width:3em;
+}
+
+.aboutHolder {
+  margin-top:3em;
+  color:white;
+  text-align: center;
+}
+
+.aboutLeft{
+  max-width:350px;
+ display:inline-block;
+  vertical-align: top;
+}
+
+.aboutRight{
+  margin-left:1em;
+  display:inline-block;
+  max-width:400px;
+  vertical-align: top;
+  text-wrap:pretty;
+  text-align: left;
+}
+
+.aboutRight h1 {
+  margin-bottom:2rem;
+}
+
+.aboutRight p{
+  margin-bottom:1rem;
+}
+.aboutimg {
+  max-width:100%;
 }
 
 .pagetitle {
@@ -100,31 +136,19 @@ nav {
       color: white;
       display: flex;
       align-items: left;
-      padding: 1rem;;
   
     }
 
     .logo {
       flex: 0.5;
-      text-align: left;
+      justify-content:center;
+      text-align: center;
       font-family: "Anton", sans-serif;
       font-weight: 400;
       font-style: normal;
       line-height: 4rem;
     }
 
-.logo h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  text-align: center;
-}
-
-.logo p {
-  font-weight: 100;
-  font-size: 0.8rem;
-  line-height: 1.6rem;
-  text-align: center;
-}
 
 .nav-icons {
   flex: 0.3;
@@ -216,6 +240,26 @@ nav {
 }
 
 
+.contact {
+  color:white;
+  line-height: 1.5em;
+  min-height:500px;
+}
+
+.contact h2{
+  margin-bottom:1rem;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color:#ffa500;
+      transition: color 0.5s ease;
+}
+
 
 .video{
 	max-width:1920px;
@@ -254,6 +298,7 @@ nav {
   width: 100%;
   height: 4rem;
 	margin-top:5em;
+  margin-bottom:5em;
 	color:white;
 }
 
@@ -263,7 +308,35 @@ nav {
 
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: black; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width:857px){
+  .aboutHolder {
+  margin-top:3em;
+  color:white;
+  text-align: center;
+}
+
+.aboutLeft{
+  max-width:350px;
+ display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:2em;
+}
+
+.aboutRight{
+  margin-left:0;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:100%;
+  vertical-align: top;
+  text-wrap:pretty;
+  text-align: left;
+}
+
+}
+
+@media only screen and (max-width: 857px) {
 
   nav {
     display:block;
