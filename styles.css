@@ -1,0 +1,296 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* override browser default */
+html,
+body {
+  margin: 0;
+  padding: 0;
+	font-family:monospace;
+	font-size:1em;
+	display: grid;
+  grid-template-rows: auto 1fr auto;
+	background-color: black;
+}
+
+.main{
+  width:100%;
+}
+
+.pagetitle {
+  margin-top: 2rem;
+  margin-bottom:1rem;
+  font-size: 2.5rem;
+  color: white;
+  text-align: left;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 4rem;
+}
+
+#animate{
+  margin: 0 auto;
+  width: 20px;
+  overflow: visible;
+  position: relative;
+}
+
+.content{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top:70px;
+	padding-bottom:4rem;
+}
+
+.video ul {
+  color:white;
+  list-style: none;
+}
+
+h2 {
+  color:white;
+  margin-bottom:1em;
+}
+
+.videoCreds {
+  text-align: left;
+}
+
+.flexCreds {
+  display:flex;
+  font-size: 0.8rem;
+}
+
+.credleft {
+  display:flex;
+  flex:0.5;
+  text-align: left;
+}
+
+.credright {
+  display:flex;
+  flex:0.5;
+  text-align:left;
+}
+
+nav {
+      color: white;
+      display: flex;
+      align-items: left;
+      padding: 1rem;;
+  
+    }
+
+    .logo {
+      flex: 0.5;
+      text-align: left;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 4rem;
+    }
+
+.logo h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.logo p {
+  font-weight: 100;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.nav-icons {
+  flex: 0.3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-icons ul {
+      list-style: none;
+      display:flex;
+      align-items: center;
+    }
+
+    .nav-icons li {
+      margin-left: 20px;
+      align-items: center;
+    }
+
+    .nav-icons a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-icons a:hover {
+      color:#ffa500;
+      transition: color 0.5s ease;
+}
+
+
+    .nav-links {
+      flex: 0.3;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .nav-links ul {
+      list-style: none;
+      display:flex;
+      align-items: center;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color:#ffa500;
+      transition: color 0.5s ease;
+}
+
+
+#nav a {
+	color:white;
+	padding:1em;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color:red;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.video{
+	max-width:1080px;
+	margin-left:auto;
+	margin-right:auto;
+    margin-bottom:6rem;
+}
+
+.info {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1080px;
+	text-align:center;
+}
+
+.txtblk {
+	display: inline-block;
+	padding: 0 1.5em 0 1.5em;
+}
+
+.txtblk a {
+	color:#ffffff;
+	font-style: italic;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.txtblk a:hover {
+	color:#bfe0ce;
+	transition: color 0.2s;
+}
+
+#footer{
+	text-align: center;
+  width: 100%;
+  height: 4rem;
+	margin-top:5em;
+	color:white;
+}
+
+#footer a{
+	text-decoration: none;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: black; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+@media only screen and (max-width: 700px) {
+
+  nav {
+    display:block;
+    margin-bottom:2em;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .nav-links ul {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .nav-links li {
+    margin-left:1em;
+    margin-right:1em;
+    margin-bottom:2em;
+  }
+  
+  .nav-icons ul {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .nav-icons li {
+    margin-left:1em;
+    margin-right:1em;
+    margin-top:2em;
+  }
+  
+  
+	.video{
+		border-width:10px;
+	}
+}
